@@ -33,9 +33,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(bukaAlamat);
     }
     public void email(View view){
-        String url="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxGpCTZLMgpZgpgdVhMKgbvKqRvwVVhqJcRFMVbrSSFjNPchWGQswXHQrjSfzrPzdvVQrQ";
-        Intent bukaEmail= new Intent(Intent.ACTION_VIEW);
-        bukaEmail.setData(Uri.parse(url));
-        startActivity(bukaEmail);
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:shaka99rz@gmail.com"));
+        startActivity(Intent.createChooser(intent,"Chooser Title"));
     }
 }
