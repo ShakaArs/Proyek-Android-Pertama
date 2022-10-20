@@ -8,13 +8,18 @@
 
    <TextView
        android:id="@+id/textview"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:background="@color/biru"
-       android:fontFamily="serif"
+       android:layout_width="411dp"
+       android:layout_height="39dp"
+       android:background="#2E5B9F"
+       android:fontFamily="sans-serif-condensed-medium"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
        android:text="Selamat Datang"
        android:textAlignment="center"
-       android:textColor="@color/white" />
+       android:textColor="@color/white"
+       android:textSize="20sp"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:layout_editor_absoluteX="0dp" />
 
    <TextView
        android:id="@+id/textView"
@@ -52,18 +57,25 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_marginTop="16dp"
-       android:text="Nama : Shaka Arisya"
+       android:fontFamily="@font/alata"
+       android:text="Nama :    Shaka Arisya"
        android:textAlignment="center"
+       android:textSize="16sp"
+       android:textStyle="bold"
        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
-       tools:layout_editor_absoluteX="0dp" />
+       tools:layout_editor_absoluteX="-16dp" />
+
 
    <TextView
        android:id="@+id/textView4"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginTop="12dp"
-       android:text="NIM : A11.2021.13406"
+       android:layout_marginTop="4dp"
+       android:fontFamily="@font/alata"
+       android:text="  NIM     :   A11.2021.13406"
        android:textAlignment="center"
+       android:textSize="16sp"
+       android:textStyle="bold"
        app:layout_constraintTop_toBottomOf="@+id/textView3"
        tools:layout_editor_absoluteX="0dp" />
 
@@ -71,21 +83,22 @@
        android:id="@+id/textView5"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginTop="80dp"
+       android:layout_marginTop="68dp"
+       android:fontFamily="@font/alata"
        android:text="Hobby : menonton Film"
        android:textAlignment="center"
+       android:textSize="16sp"
+       android:textStyle="bold"
        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
        tools:layout_editor_absoluteX="0dp" />
-
 
    <TextView
        android:id="@+id/textView6"
        android:layout_width="347dp"
        android:layout_height="82dp"
-       android:layout_marginTop="112dp"
+       android:layout_marginTop="104dp"
        android:justificationMode="inter_word"
-       android:text="Seperti teka-teki, Kalian akan selalu penasaran denganku
-Hai panggil aku Shaka, aku berasal dari Kota kecil yaitu Brebes Aku mahasiswa prodi Teknik Informatika Udinus angkatan 2021 "
+       android:text="Seperti teka-teki, Kalian akan selalu penasaran denganku Hai panggil aku Shaka, aku berasal dari Kota kecil yaitu Brebes Aku mahasiswa prodi Teknik Informatika Udinus angkatan 2021. "
        android:textAlignment="center"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
@@ -93,33 +106,47 @@ Hai panggil aku Shaka, aku berasal dari Kota kecil yaitu Brebes Aku mahasiswa pr
 
    <Button
        android:id="@+id/btn_alamat"
-       android:layout_width="243dp"
-       android:layout_height="48dp"
-       android:layout_marginTop="444dp"
+       android:layout_width="341dp"
+       android:layout_height="41dp"
+       android:layout_marginTop="476dp"
+       android:background="@color/teal_200"
        android:onClick="alamat"
        android:text="Alamat"
+       android:textSize="16sp"
+       android:fontFamily="@font/alata"
+       android:textStyle="bold"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="@+id/textview" />
 
    <Button
        android:id="@+id/btn_telepon"
-       android:layout_width="243dp"
-       android:layout_height="48dp"
+       android:layout_width="167dp"
+       android:layout_height="58dp"
+       android:layout_marginTop="4dp"
+       android:fontFamily="@font/alata"
        android:text="Telepon"
+       android:textSize="16sp"
+       android:textStyle="bold"
        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.142"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/btn_alamat" />
 
    <Button
        android:id="@+id/btn_email"
-       android:layout_width="243dp"
-       android:layout_height="48dp"
+       android:layout_width="163dp"
+       android:layout_height="59dp"
+       android:layout_marginTop="4dp"
+       android:fontFamily="@font/alata"
        android:onClick="email"
        android:text="Email"
+       android:textSize="16sp"
+       android:textStyle="bold"
        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.858"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/btn_telepon" />
+       app:layout_constraintTop_toBottomOf="@+id/btn_alamat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
