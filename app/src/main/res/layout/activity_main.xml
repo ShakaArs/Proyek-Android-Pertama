@@ -14,7 +14,9 @@
        android:fontFamily="serif"
        android:text="Selamat Datang"
        android:textAlignment="center"
-       android:textColor="@color/white" />
+       android:textColor="@color/white"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:layout_editor_absoluteX="0dp" />
 
    <TextView
        android:id="@+id/textView"
